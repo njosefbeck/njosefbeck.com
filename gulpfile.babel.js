@@ -73,7 +73,7 @@ gulp.task('styles', () => {
 gulp.task('images', () => {
 	return gulp.src(imagePaths.src + '/*')
 		.pipe(imagemin())
-		.pipe(dirs.dist + '/images')
+		.pipe('./images')
 });
 
 gulp.task('bundle', () => {
@@ -81,7 +81,7 @@ gulp.task('bundle', () => {
 	bundle(bundler);
 });
 
-gulp.task('usemin', function() {
+gulp.task('usemin', ['images'], () => {
 	return gulp.src(dirs.app + '/*.html')
 		.pipe(usemin({
 			js: [uglify()],
