@@ -11,6 +11,9 @@ import source from 'vinyl-source-stream';
 import watchify from 'watchify';
 import ghPages from 'gulp-gh-pages';
 import imagemin from 'gulp-imagemin';
+import usemin from 'gulp-usemin';
+import uglify from 'gulp-uglify';
+import cssnano from 'gulp-cssnano';
 import {create as bsCreate} from 'browser-sync';
 const browserSync = bsCreate();
 
@@ -69,7 +72,7 @@ gulp.task('styles', () => {
 });
 
 gulp.task('images', () => {
-	gulp.src(imagePaths.src + '/*')
+	return gulp.src(imagePaths.src + '/*')
 		.pipe(imagemin())
 		.pipe(dirs.dist + '/images')
 });
@@ -77,6 +80,15 @@ gulp.task('images', () => {
 gulp.task('bundle', () => {
 	var bundler = browserify(jsPaths.src).transform(babelify, { presets: ['es2015'] });
 	bundle(bundler);
+});
+
+gulp.task('usemin', function() {
+	return gulp.src(dirs.app + '/*.html')
+		.pipe(usemin({
+			js: [uglify()],
+			css: [cssnano()] 
+		}))
+		.pipe(gulp.dest(dirs.dist));
 });
 
 gulp.task('deploy', () => {

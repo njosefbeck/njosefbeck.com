@@ -6,3 +6,5 @@ node_modules
 app/styles.css
 app/styles.css.map
 app/bundle.js
+dist
+.publish
