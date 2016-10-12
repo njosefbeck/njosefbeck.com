@@ -9,7 +9,6 @@ import buffer from 'vinyl-buffer';
 import rename from 'gulp-rename';
 import source from 'vinyl-source-stream';
 import watchify from 'watchify';
-import ghPages from 'gulp-gh-pages';
 import imagemin from 'gulp-imagemin';
 import usemin from 'gulp-usemin';
 import uglify from 'gulp-uglify';
@@ -88,10 +87,5 @@ gulp.task('usemin', function() {
 			js: [uglify()],
 			css: [cssnano()] 
 		}))
-		.pipe(gulp.dest(dirs.dist));
-});
-
-gulp.task('deploy', () => {
-	return gulp.src(dirs.dist + '/**/*')
-		.pipe(ghPages());
+		.pipe(gulp.dest('./'));
 });
