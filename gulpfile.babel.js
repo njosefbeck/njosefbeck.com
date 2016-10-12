@@ -73,7 +73,7 @@ gulp.task('styles', () => {
 gulp.task('images', () => {
 	return gulp.src(imagePaths.src + '/*')
 		.pipe(imagemin())
-		.pipe('./images')
+		.pipe(gulp.dest('./images'));
 });
 
 gulp.task('bundle', () => {
