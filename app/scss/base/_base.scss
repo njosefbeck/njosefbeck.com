@@ -13,6 +13,8 @@ html, body {
 
 body {
     padding: 1rem;
+    background-color: #0B3C5D;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 h1,
@@ -23,7 +25,7 @@ h5,
 h6,
 p,
 ul {
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 0.75rem 0;
 }
 
 h1,
@@ -51,10 +53,33 @@ h4 {
     font-size: 1.25rem;
 }
 
+p {
+    font-size: 1rem;
+}
+
 li {
-    margin: 0 0 0.25rem 0;
+    margin: 0 0 0.75rem 0;
+}
+
+a {
+    text-decoration: none;
+    color: #D9B310;
+    transition: color 0.75s ease-in-out;
+
+    &:hover {
+        color: lighten(#D9B310, 10%);
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+}
+
+.fa-heart-o {
+    font-size: 0.75rem;
 }
 
 footer {
-    font-size: 0.75rem;
+    font-size: 0.5rem;
 }
