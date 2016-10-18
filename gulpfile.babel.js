@@ -13,6 +13,7 @@ import imagemin from 'gulp-imagemin';
 import usemin from 'gulp-usemin';
 import uglify from 'gulp-uglify';
 import cssnano from 'gulp-cssnano';
+import del from 'del';
 import {create as bsCreate} from 'browser-sync';
 const browserSync = bsCreate();
 
@@ -81,11 +82,19 @@ gulp.task('bundle', () => {
 	bundle(bundler);
 });
 
-gulp.task('usemin', ['images'], () => {
-	return gulp.src(dirs.app + '/*.html')
+gulp.task('usemin', ['images', 'delete-production'], () => {
+	return gulp.src([dirs.app + '/*.html'])
 		.pipe(usemin({
-			js: [uglify()],
-			css: [cssnano()] 
+			js: [uglify],
+			css: [cssnano] 
 		}))
 		.pipe(gulp.dest('./'));
+});
+
+gulp.task('delete-production', () => {
+	return del([
+		'./*.html',
+		'./styles.css',
+		'./bundle.js'
+	]);
 });
