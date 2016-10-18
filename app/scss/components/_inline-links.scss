@@ -1,0 +1,33 @@
+.inline-links {
+    margin: 0 0 2rem 0;
+
+    .container--project & {
+        margin: $default-bottom-margin;
+    }
+
+    li {
+        display: inline-block;
+        margin: 0 0.5rem 0 0;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}
+
+.inline-links--highlight {
+    font-size: 0.75rem;
+
+    .container--project & {
+        margin: 0 0 0.25rem 0;
+    }
+
+    li {
+        background-color: $accent-color;
+        margin: 0 0.5rem 0.5rem 0;
+        padding: 0.25rem;
+        color: $base-color;
+        font-weight: 600;
+    }
+
+}

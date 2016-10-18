@@ -1,6 +1,7 @@
 html, body {
     font-family: $body-font-stack;
     font-size: 100%;
+    line-height: 1.25;
 
     @media screen and (min-width: 500px) {
         font-size: 110%;
@@ -13,8 +14,8 @@ html, body {
 
 body {
     padding: 1rem;
-    background-color: #0B3C5D;
-    color: rgba(255, 255, 255, 0.9);
+    background-color: $base-color;
+    color: rgba($white, 0.9);
 }
 
 h1,
@@ -24,8 +25,9 @@ h4,
 h5,
 h6,
 p,
-ul {
-    margin: 0 0 0.75rem 0;
+ul,
+li {
+    margin: $default-bottom-margin;
 }
 
 h1,
@@ -57,23 +59,27 @@ p {
     font-size: 1rem;
 }
 
-li {
-    margin: 0 0 0.75rem 0;
-}
-
 a {
     text-decoration: none;
-    color: #D9B310;
+    color: $accent-color;
     transition: color 0.75s ease-in-out;
 
     &:hover {
-        color: lighten(#D9B310, 10%);
+        color: lighten($accent-color, 10%);
     }
 }
 
 .container {
     width: 100%;
     max-width: 500px;
+    animation-duration: 1s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+}
+
+.container--project {
+    max-width: 800px;
 }
 
 .fa-heart-o {

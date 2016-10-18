@@ -2,3 +2,13 @@
 @import url('https://fonts.googleapis.com/css?family=Bitter:400,700|Open+Sans:400,600,700');
 $header-font-stack: 'Bitter', serif;
 $body-font-stack: 'Open Sans', sans-serif;
+
+// COLORS
+$tarawera-blue: #0B3C5D;
+$gold-tips: #D9B310;
+$white: #FFFFFF;
+
+// DEFAULTS
+$base-color: $tarawera-blue;
+$accent-color: $gold-tips;
+$default-bottom-margin: 0 0 0.75rem 0;
