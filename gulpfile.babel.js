@@ -82,7 +82,7 @@ gulp.task('bundle', () => {
 	bundle(bundler);
 });
 
-gulp.task('usemin', ['images', 'delete-production'], () => {
+gulp.task('usemin', ['images', 'bundle', 'delete-production'], () => {
 	return gulp.src([dirs.app + '/*.html'])
 		.pipe(usemin({
 			js: [uglify],
