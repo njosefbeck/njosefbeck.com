@@ -1,1 +1,1 @@
-# njosefbeck.github.io
+# njosefbeck.com
