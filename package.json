@@ -1,17 +1,17 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "njosefbeck.com",
+  "description": "Personal portfolio for web developer Nathan Beck",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Nathan Beck <njosefbeck@gmail.com>",
   "dependencies": {
-    "gatsby": "^1.9.70",
-    "gatsby-link": "^1.6.21",
-    "gatsby-plugin-google-analytics": "^1.0.10",
-    "gatsby-plugin-google-fonts": "0.0.3",
-    "gatsby-plugin-react-helmet": "^1.0.5",
+    "gatsby": "1.9.93",
+    "gatsby-link": "latest",
+    "gatsby-plugin-google-analytics": "latest",
+    "gatsby-plugin-google-fonts": "latest",
+    "gatsby-plugin-react-helmet": "latest",
     "gatsby-source-contentful": "latest",
     "gatsby-transformer-remark": "latest",
-    "graphql-skip-limit": "^1.0.6"
+    "graphql-skip-limit": "^1.0.7"
   },
   "keywords": [
     "gatsby"
