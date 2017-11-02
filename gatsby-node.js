@@ -19,7 +19,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       edges.map(edge => {
         const project = edge.node;
         createPage({
-          path: `/${project.slug}/`,
+          path: `${project.slug}`,
           component: path.resolve('./src/templates/project.js'),
           context: {
             slug: project.slug
