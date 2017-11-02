@@ -5,7 +5,6 @@
   "author": "Nathan Beck <njosefbeck@gmail.com>",
   "dependencies": {
     "gatsby": "^1.9.73",
-    "gatsby-cli": "^1.1.18",
     "gatsby-link": "^1.6.22",
     "gatsby-plugin-google-analytics": "latest",
     "gatsby-plugin-google-fonts": "latest",
