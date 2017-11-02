@@ -10,7 +10,7 @@ const IndexPage = ({ data }) => {
     return (
       <li key={project.id}>
         <i className="fa fa-heart-o" aria-hidden="true">
-          <Link to={`/${project.slug}`}>
+          <Link to={`${project.slug}`}>
             {project.title}
           </Link>
         </i>
