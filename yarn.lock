@@ -3108,7 +3108,7 @@ gatsby-cli@^1.1.18:
     yargs "^8.0.2"
     yurnalist "^0.2.1"
 
-gatsby-link@latest:
+gatsby-link@^1.6.22:
   version "1.6.24"
   resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-1.6.24.tgz#a1477ff7f3b55881c51a5b22baf4c5fb85cea094"
   dependencies:
@@ -3133,7 +3133,7 @@ gatsby-plugin-google-fonts@latest:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-google-fonts/-/gatsby-plugin-google-fonts-0.0.3.tgz#36a09e7ed3b795b0a81e9404b4c487e0fdfa46ab"
 
-gatsby-plugin-react-helmet@latest:
+gatsby-plugin-react-helmet@^1.0.8:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-1.0.8.tgz#1adf87229cd54f11c95bb16b25e3cc5f20fee871"
   dependencies:
@@ -3185,7 +3185,7 @@ gatsby-transformer-remark@latest:
     unist-util-select "^1.5.0"
     unist-util-visit "^1.1.1"
 
-gatsby@latest:
+gatsby@^1.9.73:
   version "1.9.96"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.96.tgz#a119870ae1ee489e62889dd2d486ca5e1add479b"
   dependencies:
