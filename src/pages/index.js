@@ -15,7 +15,7 @@ export default ({ data }) => {
   return (
     <Layout>
       <main className="Home">
-        <p className="lead">Former high school Spanish teacher, turned fullstack JavaScript engineer. Won't stop learning. Can't stop connecting. I don't know what else to write here. This is filler copy until I can come up with something a bit more witty.</p>
+        <p className="lead">Former high school Spanish teacher, turned fullstack JavaScript engineer. Won't stop learning. Can't stop connecting.</p>
 
         <p>As of Oct. 29, 2018, learning about MongoDB & Mongoose, password security best practices, and ES6 class syntax. Wanna learn together? Get in touch!</p>
 
