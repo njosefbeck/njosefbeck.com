@@ -1,31 +1,30 @@
 {
   "name": "njosefbeck.com",
-  "description": "Personal portfolio for web developer Nathan Beck",
-  "version": "1.0.0",
+  "description": "Portfolio for JavaScript engineer Nathan Beck",
+  "version": "2.0.0",
   "author": "Nathan Beck <njosefbeck@gmail.com>",
-  "dependencies": {
-    "gatsby": "^1.9.73",
-    "gatsby-link": "^1.6.22",
-    "gatsby-plugin-google-analytics": "latest",
-    "gatsby-plugin-google-fonts": "latest",
-    "gatsby-plugin-react-helmet": "^1.0.8",
-    "gatsby-source-contentful": "latest",
-    "gatsby-transformer-remark": "latest",
-    "graphql-skip-limit": "latest",
-    "parse-passwd": "^1.0.0"
-  },
-  "keywords": [
-    "gatsby"
-  ],
   "license": "MIT",
-  "main": "n/a",
   "scripts": {
-    "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gatsby build",
+    "serve": "gatsby serve"
   },
-  "devDependencies": {
-    "prettier": "latest"
+  "dependencies": {
+    "gatsby": "2.0.33",
+    "gatsby-image": "2.0.18",
+    "gatsby-plugin-google-analytics": "2.0.7",
+    "gatsby-plugin-react-helmet": "3.0.1",
+    "gatsby-plugin-sass": "2.0.2",
+    "gatsby-plugin-sharp": "2.0.10",
+    "gatsby-plugin-typography": "2.2.1",
+    "gatsby-source-filesystem": "2.0.6",
+    "gatsby-transformer-remark": "2.1.11",
+    "gatsby-transformer-sharp": "2.1.7",
+    "node-sass": "4.9.4",
+    "react": "16.6.0",
+    "react-dom": "16.6.0",
+    "react-helmet": "5.2.0",
+    "react-typography": "0.16.13",
+    "typography": "0.16.17"
   }
 }

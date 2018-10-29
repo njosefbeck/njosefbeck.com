@@ -1,55 +1,46 @@
-import React from 'react';
-import Link from 'gatsby-link';
+import React from "react";
+import { Link, graphql } from "gatsby";
+import Layout from '../components/layout';
+import './index.scss';
 
-import '../static/font-awesome/css/font-awesome.css';
-
-const IndexPage = ({ data }) => {
-  const edges = data.allContentfulProject.edges;
-  const projects = edges.map(edge => {
-    const project = edge.node;
+export default ({ data }) => {
+  const projects = data.allMarkdownRemark.edges.map(({ node }) => {
     return (
-      <li key={project.id}>
-        <i className="fa fa-heart-o" aria-hidden="true">
-          <Link to={`${project.slug}`}>
-            {project.title}
-          </Link>
-        </i>
+      <li key={node.id}>
+        <Link to={node.frontmatter.slug}>{node.frontmatter.title}</Link>
       </li>
     );
   });
 
   return (
-    <div className="app-container">
-      <p className="about-me">Front-end web developer located in St. Louis, Missouri. JavaScript makes me weak in the knees. As does high-quality code, collaboration, and learning new things. Please reach out if you have a project idea!</p>
+    <Layout>
+      <main className="Home">
+        <p className="lead">Former high school Spanish teacher, turned fullstack JavaScript engineer. Won't stop learning. Can't stop connecting. I don't know what else to write here. This is filler copy until I can come up with something a bit more witty.</p>
 
-      <ul className="inline-links">
-        <li><a href="mailto:njosefbeck@gmail.com" title="Email"><i className="fa fa-envelope" aria-hidden="true"></i></a></li>
-        <li><a href="https://twitter.com/njosefbeck" target="_blank" title="Twitter"><i className="fa fa-twitter" aria-hidden="true"></i></a></li>
-        <li><a href="https://github.com/njosefbeck" target="_blank" title="Github"><i className="fa fa-github" aria-hidden="true"></i></a></li>
-        <li><a href="https://instagram.com/njosefbeck/" target="_blank" title="Instagram"><i className="fa fa-instagram" aria-hidden="true"></i></a></li>
-        <li><a href="http://linkedin.com/in/njosefbeck" target="_blank" title="LinkedIn"><i className="fa fa-linkedin" aria-hidden="true"></i></a></li>
-      </ul>
+        <p>As of Oct. 29, 2018, learning about MongoDB & Mongoose, password security best practices, and ES6 class syntax. Wanna learn together? Get in touch!</p>
 
-      <h3>Projects</h3>
-      <ul className="project-list">
-        {projects}
-      </ul>
-    </div>
+        <p>Here are some projects I'm proud of:</p>
+
+        <ul>
+          {projects}
+        </ul>
+      </main>
+    </Layout>
   );
-}
+};
 
 export const query = graphql`
-  query IndexQuery {
-    allContentfulProject {
+  query {
+    allMarkdownRemark {
       edges {
         node {
           id
-          title
-          slug
+          frontmatter {
+            title
+            slug
+          }
         }
       }
     }
   }
-`;
-
-export default IndexPage
+`

@@ -1,32 +1,37 @@
-const path = require('path');
+const path = require(`path`);
 
-exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators;
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions;
   return new Promise((resolve, reject) => {
     graphql(`
       {
-        allContentfulProject {
+        allMarkdownRemark {
           edges {
             node {
-              slug
+              frontmatter {
+                slug
+                title
+                description
+              }
             }
           }
         }
       }
-    `)
+    `
+    )
     .then(result => {
-      const edges = result.data.allContentfulProject.edges;
-      edges.map(edge => {
-        const project = edge.node;
+      result.data.allMarkdownRemark.edges.forEach(edge => {
         createPage({
-          path: `${project.slug}`,
-          component: path.resolve('./src/templates/project.js'),
+          path: edge.node.frontmatter.slug,
+          component: path.resolve(`./src/templates/project.js`),
           context: {
-            slug: project.slug
+            // Data passed to context is available
+            // in page queries as GraphQL variables.
+            slug: edge.node.frontmatter.slug
           },
-        });
+        })
       });
       resolve();
-    });
-  });
-}
+    })
+  })
+};

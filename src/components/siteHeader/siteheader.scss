@@ -1,0 +1,25 @@
+.SiteHeader {
+  padding-top: 30px;
+  padding-bottom: 20px;
+
+  h1 {
+    font-size: 72px;
+    margin-top: 0;
+    margin-bottom: 8px;
+
+    a {
+      font-weight: 900;
+      color: black;
+    }
+
+    a:hover,
+    a:visited {
+      color: black;
+    }
+  }
+
+  .byline {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

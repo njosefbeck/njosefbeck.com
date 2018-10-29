@@ -1,0 +1,33 @@
+$turqoise: #00C5FF;
+$hot-pink: #FF69B4;
+$rose: #E60073;
+
+.Layout {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  a {
+    text-decoration: none;
+    font-weight: 700;
+    color: $turqoise;
+    transition: color 0.2s ease-in;
+  }
+
+  a:hover {
+    color: $hot-pink;
+  }
+
+  a:visited {
+    color: $rose;
+  }
+
+  .gatsby-image-wrapper {
+    margin-bottom: 18px;
+  }
+
+  .content p {
+    line-height: 1.5;
+  }
+}
