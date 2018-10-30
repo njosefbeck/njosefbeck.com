@@ -15,9 +15,14 @@ export default ({ data }) => {
   return (
     <Layout>
       <main className="Home">
-        <p className="lead">Former high school Spanish teacher, turned fullstack JavaScript engineer. Won't stop learning. Can't stop connecting.</p>
+        <p className="lead">Former high school Spanish teacher, turned fullstack JavaScript engineer. Won't stop learning. Never want to stop connecting.</p>
 
         <p>As of Oct. 29, 2018, learning about MongoDB & Mongoose, password security best practices, and ES6 class syntax. Wanna learn together? Get in touch!</p>
+
+        <p>
+          <a href="https://github.com/njosefbeck/" target="_blank" rel="noopener noreferrer">github</a> &middot; <a href="https://www.linkedin.com/in/njosefbeck" target="_blank" rel="noopener noreferrer">linkedIn</a> &middot; <a href="https://twitter.com/njosefbeck" target="_blank" rel="noopener noreferrer">twitter</a>
+
+        </p>
 
         <p>Here are some projects I'm proud of:</p>
 
