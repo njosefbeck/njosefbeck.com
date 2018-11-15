@@ -2,6 +2,7 @@
 title: "daveyrocco.com"
 description: "A web project for photographer Davey Rocco by St. Louis-based JavaScript engineer Nathan Beck"
 slug: "/project/daveyrocco-com"
+template: "project"
 image: "./daveyrocco-com.png"
 ---
 

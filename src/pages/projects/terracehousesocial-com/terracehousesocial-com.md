@@ -1,6 +1,8 @@
 ---
 title: "terracehousesocial.com"
+description: "A Terrace House fansite that lists out all of the cast's social media platforms."
 slug: "/project/terracehousesocial-com"
+template: "project"
 image: "./terracehousesocial-com.png"
 ---
 

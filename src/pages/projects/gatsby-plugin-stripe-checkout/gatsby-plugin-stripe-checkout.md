@@ -1,6 +1,8 @@
 ---
 title: "gatsby-plugin-stripe-checkout"
+description: "A Gatsby.js plugin that adds Stripe checkout JavaScript files to your Gatsby pages"
 slug: "/project/gatsby-plugin-stripe-checkout"
+template: "project"
 image: "./gatsby-plugin-stripe-checkout.png"
 ---
 

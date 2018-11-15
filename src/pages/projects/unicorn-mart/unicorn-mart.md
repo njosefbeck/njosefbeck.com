@@ -2,6 +2,7 @@
 title: "unicorn-mart"
 description: "A GatsbyJS ecommerce POC by St. Louis-based JavaScript engineer Nathan Beck"
 slug: "/project/unicorn-mart"
+template: "project"
 image: "./unicorn-mart.png"
 ---
 

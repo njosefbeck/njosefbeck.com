@@ -1,6 +1,8 @@
 ---
 title: "training-hub-react-app"
+description: "A training application built with React"
 slug: "/project/training-hub-react-app"
+template: "project"
 image: "./training-hub-react-app.png"
 ---
 

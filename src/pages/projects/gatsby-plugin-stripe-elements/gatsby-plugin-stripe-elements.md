@@ -1,6 +1,8 @@
 ---
 title: "gatsby-plugin-stripe-elements"
+description: "A Gatsby.js plugin that adds the necessary Stripe Elements JavaScript files to Gatsby pages"
 slug: "/project/gatsby-plugin-stripe-elements"
+template: "project"
 image: "./gatsby-plugin-stripe-elements.png"
 ---
 

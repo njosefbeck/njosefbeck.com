@@ -1,6 +1,8 @@
 ---
 title: "gatsby-source-stripe"
+description: "A Gatsby.js source plugin for bringing in Stripe data to a Gatsby site"
 slug: "/project/gatsby-source-stripe"
+template: "project"
 image: "./gatsby-source-stripe.png"
 ---
 
