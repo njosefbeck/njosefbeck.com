@@ -2,9 +2,13 @@
 title: "A test post"
 description: "This is an uninspiring test post."
 slug: "/post/a-test-post"
-date: "2018-11-15"
+date: "Nov. 15, 2018"
 template: "post"
 image: ""
 ---
 
-This is a test of a blog post!
+Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit.
+
+Nullam id dolor id nibh ultricies vehicula ut id elit. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.
+
+Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod semper. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec ullamcorper nulla non metus auctor fringilla.

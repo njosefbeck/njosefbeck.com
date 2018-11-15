@@ -40,7 +40,6 @@ export const query = graphql`
             title
             slug
             description
-            date
             image {
               publicURL
               childImageSharp {
