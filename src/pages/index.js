@@ -36,7 +36,13 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark {
+    allMarkdownRemark(
+      filter: { 
+        frontmatter: {
+          template: { eq: "project" } 
+        }
+      }
+    ) {
       edges {
         node {
           id

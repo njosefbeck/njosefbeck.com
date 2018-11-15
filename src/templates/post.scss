@@ -12,4 +12,10 @@
     font-size: 12px;
     font-weight: 900;
   }
+
+  .gatsby-highlight pre[class*="language-"].line-numbers {
+    padding: 0;
+    padding-left: 2.8em;
+    overflow: initial;
+  }
 }

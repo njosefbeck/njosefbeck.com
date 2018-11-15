@@ -1,12 +1,21 @@
 import React from "react";
 import { graphql } from 'gatsby';
 import { Helmet } from "react-helmet";
+import { DiscussionEmbed } from "disqus-react";
 import Layout from "../components/layout";
 import './post.scss';
+import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
 
 export default ({ data }) => {
   const post = data.markdownRemark;
   const url = `${data.site.siteMetadata.siteUrl}${post.frontmatter.slug}`;
+  const disqusShortname = 'njosefbeck';
+  const disqusConfig = {
+    url,
+    identifier: post.frontmatter.slug,
+    title: post.frontmatter.title,
+  };
+
   return (
     <Layout>
       <Helmet>
@@ -14,15 +23,12 @@ export default ({ data }) => {
         <title>{post.frontmatter.title} | njosefbeck</title>
         <meta name="description" content={post.frontmatter.description} />
       </Helmet>
-      <main className="post">
+      <article className="post">
         <h1>{post.frontmatter.title}</h1>
         <span className="date">{post.frontmatter.date}</span>
         <div className="content" dangerouslySetInnerHTML={{ __html: post.html }} />
-        <p className="share">Share this post on 
-        <a href={`https://www.facebook.com/sharer.php?u=${url}`} target="_blank" rel="noopener noreferrer"> Facebook</a>, 
-          <a href={`https://twitter.com/intent/tweet?url=${url}&text=${post.frontmatter.title}&via=njosefbeck`} target="_blank" rel="noopener noreferrer"> Twitter</a>, or 
-          <a href={`https://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${post.frontmatter.title}&summary=${post.frontmatter.description}&source=https://njosefbeck.com`} target="_blank" rel="noopener noreferrer"> LinkedIn</a></p>
-      </main>
+        <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
+      </article>
     </Layout>
   )
 };
