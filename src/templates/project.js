@@ -6,12 +6,18 @@ import Layout from "../components/layout";
 
 export default ({ data }) => {
   const project = data.markdownRemark;
+  const url = `${data.site.siteMetadata.siteUrl}${project.frontmatter.slug}`;
   return (
     <Layout>
       <Helmet>
-        <meta charSet="utf-8" />
         <title>{project.frontmatter.title} | Project by njosefbeck</title>
         <meta name="description" content={project.frontmatter.description} />
+        <meta property="og:url" content={url} />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={project.frontmatter.title} />
+        <meta property="og:description" content={project.frontmatter.description} />
+        <meta property="og:site_name" content="njosefbeck" />
+        <meta property="twitter:site" content="@njosefbeck" />
       </Helmet>
       <main>
         <h1>{project.frontmatter.title}</h1>
@@ -24,6 +30,11 @@ export default ({ data }) => {
 
 export const query = graphql`
   query($slug: String!) {
+    site {
+      siteMetadata {
+        siteUrl
+      }
+    }
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {

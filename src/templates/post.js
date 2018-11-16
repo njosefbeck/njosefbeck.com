@@ -19,9 +19,14 @@ export default ({ data }) => {
   return (
     <Layout>
       <Helmet>
-        <meta charSet="utf-8" />
         <title>{post.frontmatter.title} | njosefbeck</title>
         <meta name="description" content={post.frontmatter.description} />
+        <meta property="og:url" content={url} />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={post.frontmatter.title} />
+        <meta property="og:description" content={post.frontmatter.description} />
+        <meta property="og:site_name" content="njosefbeck" />
+        <meta property="twitter:site" content="@njosefbeck" />
       </Helmet>
       <article className="post">
         <h1>{post.frontmatter.title}</h1>

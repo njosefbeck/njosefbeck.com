@@ -4,13 +4,25 @@ import Layout from '../components/layout';
 import './index.scss';
 
 export default ({ data }) => {
-  const projects = data.allMarkdownRemark.edges.map(({ node }) => {
-    return (
-      <li key={node.id}>
-        <Link to={node.frontmatter.slug}>{node.frontmatter.title}</Link>
-      </li>
-    );
-  });
+  const projects = data.allMarkdownRemark.edges
+    .filter(({ node }) => node.frontmatter.template === 'project')
+    .map(({ node }) => {
+      return (
+        <li key={node.id}>
+          <Link to={node.frontmatter.slug}>{node.frontmatter.title}</Link>
+        </li>
+      );
+    });
+
+  const posts = data.allMarkdownRemark.edges
+    .filter(({ node }) => node.frontmatter.template === 'post')
+    .map(({ node }) => {
+      return (
+        <li key={node.id}>
+          <Link to={node.frontmatter.slug}>{node.frontmatter.title}</Link>
+        </li>
+      );
+    });
 
   return (
     <Layout>
@@ -22,6 +34,13 @@ export default ({ data }) => {
         <ul>
           {projects}
         </ul>
+
+        <p>Or read some posts I've written:</p>
+
+        <ul>
+          {posts}
+        </ul>
+
       </main>
     </Layout>
   );
@@ -36,6 +55,7 @@ export const query = graphql`
           frontmatter {
             title
             slug
+            template
           }
         }
       }

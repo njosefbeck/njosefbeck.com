@@ -1,8 +1,9 @@
 ---
 title: "How to create a table in PostgreSQL"
 description: "A brief post sharing the basic syntax for creating a table in PostgreSQL"
-slug: "/post/postgresql-create-table"
+slug: "/2018/11/postgresql-create-table"
 date: "Nov. 15, 2018"
+num_date: "2018-11-15"
 template: "post"
 image: ""
 ---
