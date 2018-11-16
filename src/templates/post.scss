@@ -8,6 +8,10 @@
     display: block;
   }
 
+  .content {
+    margin-bottom: 40px;
+  }
+
   .content ul {
     padding-left: 40px;
   }
@@ -16,6 +20,10 @@
     padding: 0;
     padding-left: 2.8em;
     overflow: initial;
+  }
+
+  :not(pre) > code[class*="language-"], pre[class*="language-"] {
+    margin: 15px 0;
   }
 
   :not(pre) > code[class*="language-"] {
