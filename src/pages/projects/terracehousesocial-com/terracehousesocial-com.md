@@ -3,7 +3,7 @@ title: "terracehousesocial.com"
 description: "A Terrace House fansite that lists out all of the cast's social media platforms."
 slug: "/project/terracehousesocial-com"
 template: "project"
-image: "./terracehousesocial-com.png"
+image: "./terrace-house-social-com.png"
 ---
 
 Fansite for the Netflix show Terrace House that aggregrates all of the cast's social media platforms to make it easy for fans to follow them. The site itself is a React app hosted on GitHub Pages.
