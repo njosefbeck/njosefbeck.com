@@ -17,11 +17,8 @@ export default ({ data }) => {
       <main className="Home">
         <p className="lead">Former high school Spanish teacher, turned fullstack JavaScript engineer. Won't stop learning. Passionate about helping others. Love to hear other's stories.</p>
 
-        <p>As of Nov. 8, 2018, learning about MongoDB & all things MySQL. Databases FTW! Wanna learn together? Get in touch!</p>
-
         <p>
           <a href="https://github.com/njosefbeck/" target="_blank" rel="noopener noreferrer">github</a> &middot; <a href="https://www.linkedin.com/in/njosefbeck" target="_blank" rel="noopener noreferrer">linkedIn</a> &middot; <a href="https://twitter.com/njosefbeck" target="_blank" rel="noopener noreferrer">twitter</a>
-
         </p>
 
         <p>Here are some projects I'm proud of:</p>
