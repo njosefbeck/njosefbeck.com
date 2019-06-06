@@ -8,7 +8,6 @@ export default ({ data }) => {
     return (
       <li key={node.id}>
         <Link to={node.frontmatter.slug}>{node.frontmatter.title}</Link>
-        <span className="date">{node.frontmatter.date}</span>
       </li>
     );
   });
@@ -16,7 +15,6 @@ export default ({ data }) => {
   return (
     <Layout>
       <main className="Blog">
-        <p>Sometimes I like to share my thoughts.</p>
         <ul>
           {posts}
         </ul>

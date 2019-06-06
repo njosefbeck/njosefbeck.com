@@ -2,7 +2,7 @@ import Typography from "typography";
 
 const typography = new Typography({
   title: "njosefbeck.com",
-  baseLineHeight: "1.1",
+  baseLineHeight: "1.2",
   googleFonts: [
     {
       name: "Playfair Display",
@@ -12,9 +12,17 @@ const typography = new Typography({
         "900",
       ]
     },
+    {
+      name: "Roboto",
+      styles: [
+        "400",
+        "700",
+        "900",
+      ]
+    }
   ],
   headerFontFamily: ["Playfair Display", "serif"],
-  bodyFontFamily: ["Playfair Display", "serif"],
+  bodyFontFamily: ["Roboto", "sans-serif"],
   headerWeight: "900",
 });
 

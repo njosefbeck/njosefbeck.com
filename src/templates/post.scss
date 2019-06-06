@@ -1,19 +1,20 @@
 .post {
   h1 {
-    margin-bottom: 0;
+    font-size: 48px;
   }
 
-  .date {
-    margin-bottom: 15px;
-    display: block;
+  h2 {
+    margin-top: 60px;
+    font-size: 36px;
+  }
+
+  img {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .content {
     margin-bottom: 40px;
-  }
-
-  .content ul {
-    padding-left: 40px;
   }
 
   .gatsby-highlight pre[class*="language-"].line-numbers {
