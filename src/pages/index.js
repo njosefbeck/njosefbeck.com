@@ -15,7 +15,7 @@ export default ({ data }) => {
   return (
     <Layout>
       <main className="Home">
-        <p className="lead">Former high school Spanish teacher, turned fullstack JavaScript engineer. Won't stop learning. Passionate about helping others.</p>
+        <p className="lead">Former high school Spanish teacher turned fullstack JavaScript engineer. Lifelong learner. Passionate about helping others.</p>
 
         <p>
           <a href="https://github.com/njosefbeck/" target="_blank" rel="noopener noreferrer">github</a> &middot; <a href="https://www.linkedin.com/in/njosefbeck" target="_blank" rel="noopener noreferrer">linkedIn</a> &middot; <a href="https://twitter.com/njosefbeck" target="_blank" rel="noopener noreferrer">twitter</a>
