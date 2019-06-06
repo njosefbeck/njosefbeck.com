@@ -8,13 +8,13 @@ template: "post"
 image: ""
 ---
 
-Before talking about a process, first we must define what a **program** is. In short, a program is a _passive_ collection of instructions for the server to run.
+Before talking about processes, we must first define what a **program** is. In short, a program is a _passive_ collection of instructions for the server to run.
 
-A **process** is the _active_ execution of those instructions. The basic flow is:
+A **process** is the _active_ execution of those instructions. The basic flow when developing is:
 
 ```go
 write code (program) 
-  > computer compiles it to binary 
+  > operating system compiles it to binary 
     > run the binary (process)
 ```
 
