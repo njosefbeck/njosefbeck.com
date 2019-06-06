@@ -1,7 +1,7 @@
 ---
 title: "What is a process?"
 description: "A brief overview of what an operating system process is with some cute visuals"
-slug: "/whats-a-process"
+slug: "/what-is-a-process"
 date: "June 8, 2019"
 num_date: "2019-06-08"
 template: "post"
@@ -14,7 +14,7 @@ A **process** is the _active_ execution of those instructions. The basic flow wh
 
 ```go
 write code (program) 
-  > operating system compiles it to binary 
+  > operating system compiles code to binary 
     > run the binary (process)
 ```
 
